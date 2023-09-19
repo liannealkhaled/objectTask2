@@ -50,7 +50,7 @@ const students = [
       "courses": ["Math", "History", "Music"]
     }
   ]
-  
+
   
   /**********
   Question 1:
@@ -61,10 +61,11 @@ const students = [
   ===
   ANSWER: Alice
   **********/ 
- 
+  // console.log (students[0].name )
   
-function getStudentName(student){return student.name}
-console.log(getStudentName(students[0]))
+
+// function getStudentName(student){return student.name}
+// console.log(getStudentName(students[0]))
 
 
   
@@ -82,7 +83,6 @@ console.log(getStudentName(students[0]))
 
 
 
-      function 
   
 //   function getCourse(student, courseIndex) {
 //    console.log(student[x])
@@ -107,9 +107,9 @@ console.log(getStudentName(students[0]))
       }
       **********/
   
-  function addCourseToStudent(student, course) {
-    // Your code here
-  }
+  // function addCourseToStudent(student, course) {
+  //   // Your code here
+  // }
   
   // console.log(addCourseToStudent(students[7], "Physics"));
   
@@ -122,9 +122,9 @@ console.log(getStudentName(students[0]))
       ===
       ANSWER: 4
     **********/
-  function countCourses(student) {
-    // Your code here
-  }
+  // function countCourses(student) {
+  //   // Your code here
+  // }
   // console.log(countCourses(students[1]));
   
   
@@ -142,10 +142,10 @@ console.log(getStudentName(students[0]))
         'PE'
       ]
     **********/
-  function listAllCourses(students) {
-    // Your code here
-  }
-  // console.log(listAllCourses(students));
+  // function listAllCourses(students) {
+  //   // Your code here
+  // }
+  // // console.log(listAllCourses(students));
   
   
   /**********
@@ -160,10 +160,10 @@ console.log(getStudentName(students[0]))
     { id: 7, name: 'Grace', courses: [ 'Math', 'English', 'Music' ] }
     **********/
   
-  function removeCourseFromStudent(student, course) {
-    // Your code here
+  // function removeCourseFromStudent(student, course) {
+  //   // Your code here
   
-  }
+  // }
   // console.log(removeCourseFromStudent(students[6],"Science"));
   
   
@@ -177,10 +177,10 @@ console.log(getStudentName(students[0]))
     ANSWER: { id: 10, name: 'Jack', courses: [ 'Math', 'History', 'Music' ] }
     **********/
   
-  function findStudentById(studentId, students) {
-    // Your code here
+  // function findStudentById(studentId, students) {
+  //   // Your code here
   
-  }
+  // }
   
   // console.log(findStudentById(10,students));
   
@@ -209,8 +209,8 @@ console.log(getStudentName(students[0]))
   ]
     **********/
   
-  function getStudentsByCourse(course, students) {
-    // Your code here
-  }
+  // function getStudentsByCourse(course, students) {
+  //   // Your code here
+  // }
   
   // console.log(getStudentsByCourse("Music",students));
