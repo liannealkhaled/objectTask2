@@ -61,11 +61,12 @@ const students = [
   ===
   ANSWER: Alice
   **********/ 
-  // console.log (students[0].name )
-  
 
-// function getStudentName(student){return student.name}
-// console.log(getStudentName(students[0]))
+  function getStudentName(student){
+    return student.name
+  }
+  console.log (getStudentName(students[0]) )
+  
 
 
   
@@ -80,15 +81,11 @@ const students = [
       ANSWER: Music
     **********/
 
+function findingsubject (student, subject){
+return student.courses[subject]
+}
 
-
-
-  
-//   function getCourse(student, courseIndex) {
-//    console.log(student[x])
-//   }
-
-// console.log(getCourse(students[4], 2)); 
+console.log(findingsubject(students[4], 2)); 
   
   
   /**********
@@ -107,11 +104,16 @@ const students = [
       }
       **********/
   
-  // function addCourseToStudent(student, course) {
-  //   // Your code here
-  // }
-  
-  // console.log(addCourseToStudent(students[7], "Physics"));
+      function addCourseToStudent ( student, course){
+student.courses.push(course);
+return student
+      }
+
+  console.log(addCourseToStudent(students[7], "biology"));
+
+
+
+
   
   
   /**********
@@ -122,10 +124,10 @@ const students = [
       ===
       ANSWER: 4
     **********/
-  // function countCourses(student) {
-  //   // Your code here
-  // }
-  // console.log(countCourses(students[1]));
+  function countCourses(student) {
+    return student.courses.length
+  }
+  console.log(countCourses(students[1]));
   
   
   /**********
@@ -159,12 +161,18 @@ const students = [
     ANSWER:
     { id: 7, name: 'Grace', courses: [ 'Math', 'English', 'Music' ] }
     **********/
+
+    // students.student.courses.map(course.pop()) 
+  // let newarray = []
+  // newarray = students.courses.find() 
+  // let newarray = []
+  // newarray = students.courses.find(course); return student.courses.splice(course)
+
+  function removeCourseFromStudent(student, course) {
+ 
   
-  // function removeCourseFromStudent(student, course) {
-  //   // Your code here
-  
-  // }
-  // console.log(removeCourseFromStudent(students[6],"Science"));
+  }
+  console.log(removeCourseFromStudent(students[6],"Science"));
   
   
   /**********
@@ -177,12 +185,12 @@ const students = [
     ANSWER: { id: 10, name: 'Jack', courses: [ 'Math', 'History', 'Music' ] }
     **********/
   
-  // function findStudentById(studentId, students) {
-  //   // Your code here
+  function findStudentById(studentId, students) {
+   
   
-  // }
+  }
   
-  // console.log(findStudentById(10,students));
+  console.log(findStudentById(10,students));
   
   
   /**********
