@@ -144,11 +144,15 @@ return student
         'PE'
       ]
     **********/
-  // function listAllCourses(students) {
-  //   // Your code here
-  // }
-  // // console.log(listAllCourses(students));
-  
+// ///// Not working!!!!!!! 
+
+      function listAllCourses(students){
+let unique =[]
+students.forEach((student)=>{student.courses.forEach((course)=>{if (!unique.includes(course)){unique.push()}} )} ) 
+
+      }
+    
+console.log(listAllCourses(students));
   
   /**********
     Question 6:
@@ -161,20 +165,15 @@ return student
     ANSWER:
     { id: 7, name: 'Grace', courses: [ 'Math', 'English', 'Music' ] }
     **********/
-
-    // students.student.courses.map(course.pop()) 
-  // let newarray = []
-  // newarray = students.courses.find() 
-  // let newarray = []
-  // newarray = students.courses.find(course); return student.courses.splice(course)
+// to change inside an obj : = 
 
   function removeCourseFromStudent(student, course) {
- 
+ student.courses = student.courses.filter((x)=>{return x!=course});
+ return student
   
   }
   console.log(removeCourseFromStudent(students[6],"Science"));
-  
-  
+
   /**********
     Question 7:
     findStudentById(studentId, students):
@@ -186,7 +185,8 @@ return student
     **********/
   
   function findStudentById(studentId, students) {
-   
+    return students.filter((x)=> studentId == x.id) 
+    
   
   }
   
@@ -218,7 +218,33 @@ return student
     **********/
   
   // function getStudentsByCourse(course, students) {
-  //   // Your code here
+ 
+  //   students.forEach((student)=>{student.courses.forEach((course)=>{if (student.course == course){return student}} )} )
+
   // }
+
+  // function getStudentsByCourse(course,students){ 
+  //   students.filter((x)=>{if(x.course == course){return students} } ) 
+  // }
+
+//    students.forEach(students.filter()()=>{} ) 
+
+//     student.filter((x)=>{if (x.course == course) {
+// enrolled.push ()
+//     } })
+
+
+
   
-  // console.log(getStudentsByCourse("Music",students));
+//   function getStudentsByCourse(course, students) {
+//     let enrolled = []
+//     students.forEach((x)=>{if (x.course == course) {
+// enrolled.push ()
+//     } })
+//  return enrolled
+//   }
+
+
+  console.log(getStudentsByCourse("Music",students));
+
+  // /// print: empty array!!!!
